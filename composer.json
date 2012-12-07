@@ -1,6 +1,6 @@
 {
     "name": "brs-software/brs-zf",
-    "homepage": "https://github.com/brssoftware/BrsZfSloth",
+    "homepage": "https://github.com/brssoftware/BrsZf",
     "description": "Common classes using ZF2",
     "type": "library",
     "license": "BSD-3-Clause",
