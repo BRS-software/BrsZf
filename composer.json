@@ -1,0 +1,26 @@
+{
+    "name": "brs-software/brs-zf",
+    "homepage": "https://github.com/brssoftware/BrsZfSloth",
+    "description": "Common classes using ZF2",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2"
+    ],
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "2.*"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Brs\\Zf\\": "src/",
+            "BrsZfTest\\": "tests/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
