@@ -8,20 +8,20 @@ use Zend\ServiceManager\ServiceManagerAwareInterface;
 
 trait ServiceManagerAwareTrait
 {
-    protected $__serviceManager;
+    protected $serviceManager;
 
     public function setServiceManager(ServiceManager $sm)
     {
-        $this->__serviceManager = $sm;
+        $this->serviceManager = $sm;
         return $this;
     }
 
     public function getServiceManager()
     {
-        if (null === $this->__serviceManager) {
+        if (null === $this->serviceManager) {
             throw new RuntimeException('service manager not set');
         }
-        return $this->__serviceManager;
+        return $this->serviceManager;
     }
 
     public function getService($serviceName)
