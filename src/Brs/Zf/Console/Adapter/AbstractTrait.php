@@ -40,8 +40,7 @@ trait AbstractTrait
 
     public function error($text = 'An error occurred')
     {
-        $this->writeErrorLine(call_user_func_array('sprintf', func_get_args()));
+        $this->writeErrorLine(str_replace('%', '%%', call_user_func_array('sprintf', func_get_args())));
         exit(1);
     }
-
 }
